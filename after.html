@@ -1,0 +1,36 @@
+<!DOCTYpE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device, intial-scale=1">
+<title>my webpage</title>
+<style>
+h1::after{
+    content: " bye";
+    font-size: 50px;
+    color: blue;
+    background-color: black;
+}
+body {
+    counter-reset: section;
+}
+p::before{
+    counter-increment: section;
+    content: "Crush " counter(section) ": ";
+}
+
+</style>
+</head>
+<body>
+
+   <h1>1. click here </h1>
+   <h1>2. click here </h1>
+   <h1>3. click here </h1>
+   
+    
+        <p>rabiul</p>
+        <p>islam</p>
+        <p>akash</p>
+   
+</body>
+</html>
